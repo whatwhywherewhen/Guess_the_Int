@@ -1,5 +1,5 @@
 # "Guess the number" mini-project
-# http://www.codeskulptor.org/#user40_hTbWDwZ8bsmYG0Y.py 
+# http://www.codeskulptor.org/#user40_RQ2aGtjC7uded2B.py
 
 import simplegui
 import random
@@ -42,7 +42,7 @@ def input_guess(guess):
     print "---------------------", '\n' ,"Guesses so far:", 
     for x in trylist: print x,
     print "", '\n', "Guess was", guess
-    if guess.isdigit() == False or int(guess) not in range(num_range):
+    if not guess.isdigit() or int(guess) not in range(num_range):
         print "Please enter a valid number in range 0 to", num_range
     elif guess in trylist:
         print "You already guessed that!"
