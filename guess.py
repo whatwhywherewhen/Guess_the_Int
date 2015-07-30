@@ -17,8 +17,8 @@ def new_game():
     trylist = []
     secret_number = random.randrange(num_range)
     tries = int(math.ceil(math.log(num_range, 2))) #calculate tries based on binary search algorithm
-    print '\n', "==============================", '\n', "SCORE: Player:", player_score, \
-    "| Computer:", computer_score, '\n', "New Game - Range:", \
+    print '\n', "==============================", '\n', "SCORE: Player:", \
+    player_score, "| Computer:", computer_score, '\n', "New Game - Range:", \
     num_range, '\n', "Attempts remaining", tries, '\n',"Guess my number"
         
 # define event handlers for control panel
