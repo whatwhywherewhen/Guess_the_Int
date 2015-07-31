@@ -1,5 +1,5 @@
 # "Guess the number" mini-project
-# http://www.codeskulptor.org/#user40_cviRPrSlAXGK8rl.py
+# http://www.codeskulptor.org/#user40_OefZnDwCx5RgFlT.py
 
 import simplegui
 import random
@@ -39,14 +39,17 @@ def input_guess(guess):
     # main game logic
     global tries, trylist, player_score, computer_score
     myguess.set_text("") # Clear the text input box
+    guess = guess.strip( ) # Remove rogue space from input if present
     print "---------------------", '\n' ,"Guesses so far:", 
-    guess = guess.strip( )
     for x in trylist: print x,
     print "", '\n', "Guess was", guess
     if guess == "reset":
         player_score = 0
         computer_score = 0
         new_game()
+    elif guess == "Brian":
+        print "Now, you listen here!", '\n', "He's not the Messiah.", \
+        '\n', "He's a very naughty boy!"
     elif not guess.isdigit() or int(guess) not in range(num_range):
         print "Please enter a valid number in range 0 to", num_range
     elif guess in trylist:
