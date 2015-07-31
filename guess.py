@@ -1,5 +1,5 @@
 # "Guess the number" mini-project
-# Run via http://www.codeskulptor.org/#user40_tBR27MOHxL0bLds.py
+# http://www.codeskulptor.org/#user40_cviRPrSlAXGK8rl.py
 
 import simplegui
 import random
@@ -61,11 +61,11 @@ def input_guess(guess):
         trylist.append(guess) # Add guess to list of guesses (trylist)
     elif int(guess) == secret_number:
         print "Correct"
-        player_score = player_score + 1
+        player_score += 1
         new_game()
     else:
         print "Sorry no attempts left", '\n', "My Guess was", secret_number, '\n'
-        computer_score = computer_score + 1
+        computer_score += 1
         new_game()
         
 # create frame
