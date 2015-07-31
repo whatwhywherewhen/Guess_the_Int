@@ -40,7 +40,8 @@ def input_guess(guess):
     global tries, trylist, player_score, computer_score
     myguess.set_text("") # Clear the text input box
     print "---------------------", '\n' ,"Guesses so far:", 
-    for x in trylist: print x,
+    guess = guess.strip( )
+	for x in trylist: print x,
     print "", '\n', "Guess was", guess
     if not guess.isdigit() or int(guess) not in range(num_range):
         print "Please enter a valid number in range 0 to", num_range
