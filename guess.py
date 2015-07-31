@@ -1,5 +1,5 @@
 # "Guess the number" mini-project
-# http://www.codeskulptor.org/#user40_RQ2aGtjC7uded2B.py
+# http://www.codeskulptor.org/#user40_J61u72yubzwXK8Z.py
 
 import simplegui
 import random
