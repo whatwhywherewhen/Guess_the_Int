@@ -72,7 +72,7 @@ def input_guess(guess):
         new_game()
         
 # create frame
-frame = simplegui.create_frame("Guess the Interger!", 130, 160)
+frame = simplegui.create_frame("Guess the Integer!", 130, 160)
 
 # register event handlers for control elements and start frame
 myguess = frame.add_input("Type your Guess!", input_guess, 145)
